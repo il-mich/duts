@@ -63,9 +63,9 @@ static const char unknown_str[] = "✗";
      */
 static const struct arg args[] = {
 	/* function format	string			argument	*/
-    { keyboard_indicators,  "%s ",          "c?"            },
-    { username,             "%s | ",        NULL            },
-	{ wifi_essid, 		    "%s : ",		"wlp0s29u1u6"   },
-	{ wifi_perc,		    "%s%% | ",		"wlp0s29u1u6"	},
-	{ datetime, 		    "%s",			"%a %d %b %R" 	}
+    { keyboard_indicators,  "%s ",      "c?"            },
+    { username,             "%s | ",    NULL            },
+	{ wifi_essid,           "%s ",		"wlp0s29u1u6"   },
+	{ wifi_perc,            "%s%% | ",	"wlp0s29u1u6"	},
+	{ datetime,             "%s",		"%a %d %b %R" 	}
 };
