@@ -1,6 +1,6 @@
 # add .local/bin to PATH
-export PATH=/opt/aspectj/bin:$HOME/.local/bin:$PATH
-export CLASSPATH=.:/opt/aspectj/lib/aspectjrt.jar
+#export PATH=/opt/aspectj/bin:$HOME/.local/bin:$PATH
+#export CLASSPATH=.:/opt/aspectj/lib/aspectjrt.jar
 
 # italian keymap
 setxkbmap it
