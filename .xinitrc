@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # italian keymap
 setxkbmap it
 
@@ -10,6 +12,9 @@ unclutter &
 # compositor for transparency
 picom -b
 
+# merge home .Xresources to global ones
+xrdb -merge ~/.Xresources
+
 # [tower only] select resolution and refresh rate
 xrandr --output HDMI-0 --mode 1920x1080 --rate 120
 
@@ -17,7 +22,7 @@ xrandr --output HDMI-0 --mode 1920x1080 --rate 120
 slstatus 2>&1> /dev/null &
 
 # restore colorscheme
-wal -R
+feh --bg-center f40.jpg
 
 # start wm
 exec dwm
