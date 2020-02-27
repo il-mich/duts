@@ -1,7 +1,3 @@
-# add .local/bin to PATH
-#export PATH=/opt/aspectj/bin:$HOME/.local/bin:$PATH
-#export CLASSPATH=.:/opt/aspectj/lib/aspectjrt.jar
-
 # italian keymap
 setxkbmap it
 
@@ -17,7 +13,7 @@ picom -b
 # [tower only] select resolution and refresh rate
 xrandr --output HDMI-0 --mode 1920x1080 --rate 120
 
-# status bar on the right
+# status bar
 slstatus 2>&1> /dev/null &
 
 # restore colorscheme
