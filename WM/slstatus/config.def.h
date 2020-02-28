@@ -60,12 +60,12 @@ static const char unknown_str[] = "✗";
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
-     */
+ */
 static const struct arg args[] = {
-	/* function format	string			argument	*/
-    { keyboard_indicators,  "%s ",      "c?"            },
-    { username,             "%s | ",    NULL            },
+	/* function format	string		argument	*/
+    	{ username,             "%s | ",    	NULL            },
 	{ wifi_essid,           "%s ",		"wlp0s29u1u6"   },
 	{ wifi_perc,            "%s%% | ",	"wlp0s29u1u6"	},
-	{ datetime,             "%s",		"%a %d %b %R" 	}
+	{ datetime,             "%s",		"%a %d %b %R" 	},
+    	{ keyboard_indicators,  " %s",      	"c?"            }
 };
