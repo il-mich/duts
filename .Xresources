@@ -1,0 +1,86 @@
+!!! Colours
+
+! Cowm colours
+cowm.norm_bg:		#060B1A
+cowm.norm_fg:		#32405E
+cowm.norm_border:	#060B1A
+cowm.sel_bg:		#32405E
+cowm.sel_fg:		#FF376F
+cowm.sel_border:	#32405E
+
+! 16 Colours handpicked
+URxvt.color0: #060B1A
+! #091326
+URxvt.color1: #FF376F
+! #FF0044
+URxvt.color2: #165032
+URxvt.color3: #F2B482
+URxvt.color4: #112255
+URxvt.color5: #771155
+URxvt.color6: #1E9EAE
+URxvt.color7: #DDAABB
+
+URxvt.color8: #9CABE8
+URxvt.color9: #FF66AA
+URxvt.color10: #30B06E
+URxvt.color11: #FFE6B3
+URxvt.color12: #2C49BD
+URxvt.color13: #A37ACC
+URxvt.color14: #63F2F1
+URxvt.color15: #CBE3E7
+
+! Black colour that will not be affected by bold highlighting.
+URxvt.color66: #0E0E17
+
+
+!!! URxvt Appearance
+
+! Colours
+URxvt.foreground:   #CBE3E7
+URxvt.background:   [100]#060B1A
+URxvt.cursorColor:  #FF66AA
+URxvt.borderColor:  [100]#060B1A
+
+! Font options
+URxvt.font: xft:monospace:style=Regular:size=11
+URxvt.boldFont: xft:monospace:style=Bold:size=11
+URxvt.italicFont: xft:monospace:style=Oblique:size=11
+URxvt.boldItalicFont: xft:monospace:style=BoldOblique:size=11
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+
+! General appearance and behaviour
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.urgentOnBell: true
+URxvt.iso14755: false
+
+
+!!! Navigation Keybindings
+
+! Scroll Up and Down
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+! Move Up and Down
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+
+! Jump words with Control moving Right and Left
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+
+!!! Extensions
+URxvt.perl-ext-common: default
+
+! Unbind Control-Alt from copy/paste
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+! Bind Control-Shift to copy/paste
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
